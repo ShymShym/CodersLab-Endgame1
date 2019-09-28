@@ -3,7 +3,7 @@ Feature: CodersGuru register new user
 
     Given website https://men-men-s-01.codersguru.pl/ is open
 
-    When user enters email "fancyemail1@emailer.com"
+    When user enters email "fancyemail18@emailer.com"
     And user submits
     And user enters Imię "Jadwiga"
     And user enters Nazwisko "Brzęczyszczykiewiczówna"
@@ -20,5 +20,5 @@ Feature: CodersGuru register new user
 
 # Aby w przyszłości wykonywać ten test do zakładania wielu użytkowników, można stworzyć Scenario Outline
 # z odpowiednimi parametrami. W tym wypadku po każdej poprawnej rejestracji test może przechodzić
-# do profilu uzytkownika, a następnie wylogowywać użytkownika (wówczas formularz rejestracji będzie ponownie aktywny.
+# do profilu uzytkownika, a następnie wylogowywać użytkownika wówczas formularz rejestracji będzie ponownie aktywny.
 

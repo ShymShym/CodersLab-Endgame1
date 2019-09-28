@@ -5,7 +5,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.junit.After;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -103,7 +103,9 @@ public class CodersGuruStepsDefinition {
 
     @Then("^user is successfully registered$")
     public void userIsSuccessfullyRegistered() {
-
+        //Assert
+        Assert.assertEquals(driver.findElement(By.id("user-name")).getText(), "Jadwiga");
+    driver.quit();
     }
 }
 
