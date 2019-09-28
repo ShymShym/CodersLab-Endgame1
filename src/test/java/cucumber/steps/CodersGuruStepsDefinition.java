@@ -5,6 +5,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.After;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -95,15 +96,14 @@ public class CodersGuruStepsDefinition {
         driver.findElement(By.xpath("//form/div[12]/input")).click();
     }
 
-/*    @And("^user submits whole form$")
+    @And("^user submits the whole form$")
     public void userSubmitsForm() {
         driver.findElement(By.id("register-submit-btn")).click();
-    }*/
+    }
 
     @Then("^user is successfully registered$")
     public void userIsSuccessfullyRegistered() {
 
     }
-
 }
 
