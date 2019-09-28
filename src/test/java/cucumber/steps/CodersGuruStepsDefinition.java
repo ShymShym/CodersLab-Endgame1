@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class CodersGuruTestStepsDefinition {
+public class CodersGuruStepsDefinition {
     WebDriver driver;
 
     @Given("website (.*) is open")
@@ -95,10 +95,10 @@ public class CodersGuruTestStepsDefinition {
         driver.findElement(By.xpath("//form/div[12]/input")).click();
     }
 
-    @And("^user submits whole form$")
+/*    @And("^user submits whole form$")
     public void userSubmitsForm() {
         driver.findElement(By.id("register-submit-btn")).click();
-    }
+    }*/
 
     @Then("^user is successfully registered$")
     public void userIsSuccessfullyRegistered() {

@@ -1,8 +1,9 @@
-Feature: CodersGuru Form Fill
-  Scenario: User can fill registration form
+Feature: CodersGuru register new user
+  Scenario: User can fill the registration form
+
     Given website https://men-men-s-01.codersguru.pl/ is open
 
-    When user enters email "email3@emailer.com"
+    When user enters email "email7@emailer.com"
     And user submits
     And user enters Imię "Jadwiga"
     And user enters Nazwisko "Brzęczyszczykiewiczówna"
@@ -14,6 +15,7 @@ Feature: CodersGuru Form Fill
     And user enters Numer domu/lokalu "11/10"
     And user checks box
     And user submits whole form
+
     Then user is successfully registered
 
 
